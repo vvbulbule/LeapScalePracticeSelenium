@@ -7,7 +7,7 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileElement;
 
-public class appiumCalculatorRealme {
+public class AppiumCalculatorRealme {
 	
 	static AppiumDriver<MobileElement> driver;
 
