@@ -34,7 +34,7 @@ public class AppiumDialer {
 
 			cap.setCapability("deviceName", "Nexus 5");
 			cap.setCapability("udid","04d9520d03285620");
-			cap.setCapability("platformName", "Android");
+			cap.setCapability("platformName", "Android"); 
 			cap.setCapability("platformVersion","6.0.1" );
 			cap.setCapability("appPackage", "com.google.android.dialer");
 			cap.setCapability("appActivity", "com.google.android.dialer.DialtactsActivity");//	  
