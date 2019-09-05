@@ -44,12 +44,14 @@ public class AppiumDialer {
 			driver = new AppiumDriver<MobileElement>(url,cap);
 
 
-			Thread.sleep(1000);
+			Thread.sleep(2000);
 			
 			
 			
 			
 			driver.findElement(By.id("com.google.android.dialer:id/floating_action_button")).click();
+			
+			Thread.sleep(2000);
 			
 			driver.findElement(By.id("com.google.android.dialer:id/nine")).click();
 			driver.findElement(By.id("com.google.android.dialer:id/six")).click();

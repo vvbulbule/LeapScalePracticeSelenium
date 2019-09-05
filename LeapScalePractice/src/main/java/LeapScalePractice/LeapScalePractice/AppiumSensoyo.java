@@ -2,6 +2,7 @@ package LeapScalePractice.LeapScalePractice;
 
 import java.net.URL;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
 import io.appium.java_client.AppiumDriver;
@@ -37,7 +38,52 @@ public class AppiumSensoyo {
 		   
 		 driver = new AppiumDriver<MobileElement>(url,cap);
 		 
-		 System.out.println();
+		 System.out.println("Sensoyo App is Launched");
+		 
+		 
+		 driver.findElement(By.id("com.android.packageinstaller:id/permission_allow_button")).click();
+		 
+		 driver.findElement(By.id("com.lsgp.sensoyo:id/editText_email")).sendKeys("vikrant.bulbule@leapscale.com");
+		 
+		 
+		 driver.hideKeyboard();
+		 
+		 driver.findElement(By.id("com.lsgp.sensoyo:id/editTextPassword")).sendKeys("vvbulbule");
+		 
+		 driver.hideKeyboard();
+		 
+		 driver.findElement(By.id("com.lsgp.sensoyo:id/buttonLogin")).click();
+		 
+		 Thread.sleep(5000);
+		 
+		 driver.findElement(By.id("com.lsgp.sensoyo:id/menu_auto_renew")).click();
+		 
+		 Thread.sleep(5000);
+		 
+		 driver.findElement(By.id("com.lsgp.sensoyo:id/item_analytics_fragment")).click();
+		 
+		 Thread.sleep(5000);
+		 
+		 driver.findElement(By.id("com.lsgp.sensoyo:id/item_alarms_fragment")).click();
+		 
+		 Thread.sleep(5000);
+		 
+		 driver.findElement(By.id("com.lsgp.sensoyo:id/item_report_fragment")).click();
+		 
+		 driver.findElement(By.id("com.lsgp.sensoyo:id/item_settings_fragment")).click();
+		 
+		 driver.findElement(By.id("com.lsgp.sensoyo:id/menu_logout")).click();
+		 
+		 Thread.sleep(5000);
+		 driver.findElement(By.id("android:id/button1")).click();
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+		 
 		 
 		
 		

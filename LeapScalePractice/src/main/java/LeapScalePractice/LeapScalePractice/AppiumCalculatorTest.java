@@ -8,7 +8,7 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileElement;
 
-public class CalculatorTest {
+public class AppiumCalculatorTest {
 
 	static AppiumDriver<MobileElement> driver;
 
