@@ -6,7 +6,10 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
 import io.appium.java_client.AppiumDriver;
+import io.appium.java_client.MobileDriver;
 import io.appium.java_client.MobileElement;
+import io.appium.java_client.TouchAction;
+import io.appium.java_client.touch.offset.ElementOption;
 
 public class AppiumLongPress {
 
@@ -48,9 +51,16 @@ static AppiumDriver<MobileElement> driver;
 		driver.findElement(By.id("com.android.packageinstaller:id/permission_allow_button")).click();
 		driver.findElement(By.id("com.android.packageinstaller:id/permission_allow_button")).click();
 		driver.findElement(By.id("com.android.packageinstaller:id/permission_allow_button")).click();
+		
+		Thread.sleep(4000);
 
-		driver.findElement(By.id("com.google.android.apps.messaging:id/start_new_conversation_button")).click();
-
+		// In latest appium handling the TouchAction is having little change (i.e ElementOption )
+		TouchAction action= new TouchAction((MobileDriver)driver);
+		MobileElement ele=  driver.findElement(By.id("Message from VZ-VFCARE: , Congratulations on your new 4G phone! To enjoy Vodafone SuperNet 4G speeds at 3G prices, insert your 4G SIM into slot 1 & select network type as 4G/LTE. If you haven't upgraded to a 4G SIM yet, visit our nearest store for an instant upgrade & enjoy a welcome data offer absolutely free! No documents required.. Time: 2/17/18, 14:57."));;
+		action.longPress(ElementOption.element(ele)).perform().release();
+		
+		
+		
 
 		
 

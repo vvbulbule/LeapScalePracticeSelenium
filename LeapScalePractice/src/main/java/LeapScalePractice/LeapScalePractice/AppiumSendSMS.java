@@ -60,6 +60,8 @@ public class AppiumSendSMS {
 		driver.findElement(By.id("com.google.android.apps.messaging:id/compose_message_text")).sendKeys("Hi");
 		
 		driver.findElement(By.id("com.google.android.apps.messaging:id/send_message_button_icon")).click();
+		
+
 
 
 	}

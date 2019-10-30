@@ -31,7 +31,7 @@ public class AppiumVerticalScroll {
 	}
 
 
-	//
+	////This approach is without using scrollTo() method
 	public static void openCalculator() throws Exception {
 
 		DesiredCapabilities cap = new DesiredCapabilities();
@@ -53,7 +53,7 @@ public class AppiumVerticalScroll {
 		
 		AndroidElement list=(AndroidElement) driver.findElement(By.id("com.android.settings:id/title"));
 		
-		
+		//This approach is without using scrollTo() method
 		//Scolling down till we get the element Memory
 		MobileElement listitem=(MobileElement) driver.findElement(
 				MobileBy.AndroidUIAutomator(

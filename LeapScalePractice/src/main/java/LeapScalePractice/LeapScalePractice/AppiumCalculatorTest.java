@@ -25,7 +25,7 @@ public class AppiumCalculatorTest {
 
 	public static void openCalculator() throws Exception {
 
-		DesiredCapabilities cap = new DesiredCapabilities();
+		DesiredCapabilities cap = new DesiredCapabilities();// DesiredCapabilities is the class name
 
 		cap.setCapability("deviceName", "Nexus 5");//Realme 2 Pro
 		cap.setCapability("udid","04d9520d03285620");//4e8b5c77  // 
